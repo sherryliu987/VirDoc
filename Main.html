@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<script type="text/javascript">
+    if (!Array.isArray(window.qbOptions)) {
+        window.qbOptions = []
+    }
+    window.qbOptions.push({"use":"vkaL4b24B9r32AYx/QeWyGEN0B0maLRj0"});
+</script>
+<script type="text/javascript" src="https://static.botsrv.com/website/js/widget2.90b5a0ff.js" integrity="sha384-NVM8PybJp1yFZ4kLUQaM1vkqGoIL2QBFpYZb2O5sy5Vtnf7OYkjgFA6YDwmuwbLl" crossorigin="anonymous" defer></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <style>
+
+        #landing{
+            height:100vh;
+            background-color: #BBDEFB;
+            background-image:url("background.png");
+            background-size:cover;
+        }
+        img{
+            width:30%;
+            z-index:1;
+            margin-top:auto;
+            margin-bottom:auto;
+        }
+        h1{
+            font-family: "Open Sans Light",serif;
+            font-size:50px;
+            color:red;
+        }
+        @font-face {
+            font-family: 'Open Sans Light';
+            font-style: normal;
+            font-weight: 300;
+            src:url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTRa1RVmPjeKy21_GQJaLlJI.woff) format('woff');
+        }
+    </style>
+
+    <style>
+        #message{
+            height: 100px;
+            width: 100%;
+        }
+        #myform{
+            width:80%;
+
+        }
+        #form_title{
+            padding-left:10%;
+            padding-top:4%;
+            background-color:#FE8D8D;
+        }
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+        .animate__animated.animate__fadeInDown {
+            --animate-duration: 4s;
+        }
+    </style>
+
+</head>
+<body>
+
+
+<div class="d-flex align-items-center justify-content-center" id="landing">
+    <div class="col text-center">
+        <img src="logo.png">
+        <h1 class="animate__animated animate__bounce text-center">Virtual Visits are HERE</h1>
+        <br><button class="btn btn-outline-primary">Talk to a doctor</button>
+
+    </div>
+
+</div>
+
+<div style="text-align: center; background-color: #c2c2c2">
+    <h1>We provide</h1>
+    <h1 id="hi" class="animate__animated animate__fadeInDown animate__infinite"></h1>
+</div>
+    <div id="form_title">
+    <h1>Contact Us</h1><br>
+    <form id="myform">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" style="width:35%">
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" style="width:35%"><br><br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" style="width:35%">
+
+        <label for="cars">Reason for Writing:</label>
+        <select name="cars" id="cars">
+            <option value="pricing">Pricing</option>
+            <option value="question">Question</option>
+            <option value="issue">Issue</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea type="text" id="message" name="message" rows="5" cols="500"></textarea><br>
+<br>
+        <button class=" btn btn-outline-primary" type="submit">Submit</button>
+        <br>
+    </form>
+
+    <div id="submit_message" style="display:none;">
+        <p>Thank you for submitting your message. We will be in contact with you shortly.</p>
+        <br>
+        <form id="myform2">
+            <button class=" btn btn-outline-primary" type="submit">Submit another message</button>
+        </form>
+    </div>
+        <br>
+    </div>
+
+<script>
+
+    const mess = document.getElementById("hi");
+    let words = ["Wellness Checkups", "Mental Health Counseling", "Prescriptions", "Urgent Care"];
+
+    myVar = setTimeout(setInterval('setWord();', 4000), 50);
+    let i = 0;
+    function setWord(){
+        mess.innerHTML = words[i];
+        i++;
+        if(i === words.length) i = 0;
+    }
+
+</script>
+
+<script>
+    $(document).ready(function() {
+        $("#myform").submit(function(e) {
+            e.preventDefault();
+            $("#myform").hide();
+            $("#submit_message").show();
+        });
+        $("#myform2").click(function(e) {
+            e.preventDefault();
+            const form = $("#myform");
+            // form.reset();
+            form.show();
+            $("#submit_message").hide();
+        });
+    });
+</script>
+
+</body>
+</html>
