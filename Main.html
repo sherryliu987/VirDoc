@@ -16,6 +16,7 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link rel="stylesheet" href="timeline.css">
     <style>
 
         #landing{
@@ -50,7 +51,6 @@
         }
         #myform{
             width:80%;
-
         }
         #form_title{
             padding-left:10%;
@@ -59,6 +59,8 @@
         }
     </style>
 
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <style>
@@ -66,10 +68,50 @@
             --animate-duration: 4s;
         }
     </style>
+    
+    <style>
+        #timeline{
+            width:90%;
+        }
+    </style>
+
+    <style>
+        a{
+            color: darkred;
+        }
+    </style>
 
 </head>
-<body>
 
+<body style="background-color: #0a53be">
+
+<nav class="navbar navbar-expand-lg sticky-top" style="background-color: #BBDEFB;" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#landing">Virdoc</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#landing">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#demo">Demo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#timeline">History</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#form_title">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
 <div class="d-flex align-items-center justify-content-center" id="landing">
     <div class="col text-center">
@@ -81,10 +123,101 @@
 
 </div>
 
-<div style="text-align: center; background-color: #c2c2c2">
+<div style="text-align: center; background-color: #FE8D8D; height:145px;">
     <h1>We provide</h1>
     <h1 id="hi" class="animate__animated animate__fadeInDown animate__infinite"></h1>
 </div>
+
+<section class="section intro">
+    <div class="container">
+        <h1>Our History</h1>
+    </div>
+</section>
+
+<section id="timeline" class="timeline">
+    <ol>
+        <li>
+            <div>
+                <time>1934</time> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>1937</time> Proin quam velit, efficitur vel neque vitae, rhoncus commodo mi. Suspendisse finibus mauris et bibendum molestie. Aenean ex augue, varius et pulvinar in, pretium non nisi.
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>1940</time> Proin iaculis, nibh eget efficitur varius, libero tellus porta dolor, at pulvinar tortor ex eget ligula. Integer eu dapibus arcu, sit amet sollicitudin eros.
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>1943</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>1946</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>1956</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>1957</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>1967</time> Aenean condimentum odio a bibendum rhoncus. Ut mauris felis, volutpat eget porta faucibus, euismod quis ante.
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>1977</time> Vestibulum porttitor lorem sed pharetra dignissim. Nulla maximus, dui a tristique iaculis, quam dolor convallis enim, non dignissim ligula ipsum a turpis.
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>1985</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>2000</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>2005</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+            </div>
+        </li>
+        <li></li>
+    </ol>
+
+    <div class="arrows">
+        <button class="arrow arrow__prev disabled" disabled>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow_prev.svg" alt="prev timeline arrow">
+        </button>
+        <button class="arrow arrow__next">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow_next.svg" alt="next timeline arrow">
+        </button>
+    </div>
+</section>
+
+
+
+
+<script src="timeline.js"></script>
+
+
+
+
+
     <div id="form_title">
     <h1>Contact Us</h1><br>
     <form id="myform">
@@ -95,8 +228,8 @@
         <label for="email">Email:</label>
         <input type="text" id="email" name="email" style="width:35%">
 
-        <label for="cars">Reason for Writing:</label>
-        <select name="cars" id="cars">
+        <label for="reason">Reason for Writing:</label>
+        <select name="reason" id="reason">
             <option value="pricing">Pricing</option>
             <option value="question">Question</option>
             <option value="issue">Issue</option>
@@ -106,7 +239,7 @@
         <label for="message">Message:</label><br>
         <textarea type="text" id="message" name="message" rows="5" cols="500"></textarea><br>
 <br>
-        <button class=" btn btn-outline-primary" type="submit">Submit</button>
+        <button id="submit_b" class="btn btn-outline-primary" type="reset">Submit</button>
         <br>
     </form>
 
@@ -137,15 +270,18 @@
 
 <script>
     $(document).ready(function() {
-        $("#myform").submit(function(e) {
+        $("#submit_b").click(function(e) {
             e.preventDefault();
             $("#myform").hide();
             $("#submit_message").show();
         });
         $("#myform2").click(function(e) {
+            $("#fname").val("");
+            $("#lname").val("");
+            $("#reason").val("Pricing");
+            $("#message").val("");
             e.preventDefault();
             const form = $("#myform");
-            // form.reset();
             form.show();
             $("#submit_message").hide();
         });
