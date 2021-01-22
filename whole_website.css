@@ -1,0 +1,67 @@
+.timeline-box{
+    text-align: center;
+}
+
+/*form*/
+#popup_this{
+    top: 50%;
+    left: 50%;
+    text-align:center;
+    margin-top: -50px;
+    margin-left: -100px;
+    position: fixed;
+    background: #fff;
+    padding: 30px;
+}
+
+a{
+    color: darkred;
+}
+
+/*solutions animation timing*/
+.animate__animated.animate__fadeInDown {
+    --animate-duration: 4s;
+}
+
+/*form stuff*/
+#message{
+    height: 100px;
+    width: 100%;
+}
+#myform{
+    width:80%;
+}
+#form_title{
+    padding-left:10%;
+    padding-top:4%;
+    background-color:#FE8D8D;
+}
+
+/*landing*/
+#landing{
+    height:106vh;
+    background-color: #BBDEFB;
+    background-image:url("images/background.png");
+    background-size:cover;
+}
+img{
+    width:30%;
+    z-index:1;
+    margin-top:auto;
+    margin-bottom:auto;
+}
+h1{
+    font-family: "Open Sans Light",serif;
+    font-size:50px;
+    color:red;
+}
+@font-face {
+    font-family: 'Open Sans Light';
+    font-style: normal;
+    font-weight: 300;
+    src:url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTRa1RVmPjeKy21_GQJaLlJI.woff) format('woff');
+}
+
+body{
+    background-color: #BBDEFB;
+}
