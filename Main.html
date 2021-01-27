@@ -8,9 +8,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="whole_website.css">
     <link rel="stylesheet" href="timeline.css">
-    <link rel="shortcut icon" href="favicon.ico"/>
 </head>
 
 <script type="text/javascript">
@@ -29,27 +28,28 @@
 <!--</div>-->
 
 <!--navbar-->
-<nav class="navbar navbar-expand-lg sticky-top" style="background-color: #BBDEFB;" id="mainNav">
+<nav class="navbar navbar-expand-lg sticky-top bg-transparent" id="mainNav">
     <div class="container">
+        <a class="navbar-brand" href="#landing"  style="color: #184ca7;">virdoc</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#landing">About</a>
+                    <a class="nav-link" href="#landing" style="color: #184ca7;">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+                    <a class="nav-link" href="#services" style="color: #184ca7;">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#demo">Demo</a>
+                    <a class="nav-link" href="#demo" style="color: #184ca7;">Demo</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#timeline">History</a>
+                    <a class="nav-link" href="#timeline" style="color: #184ca7;">History</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#form_title">Contact</a>
+                    <a class="nav-link" href="#form_title" style="color: #184ca7;">Contact</a>
                 </li>
             </ul>
         </div>
@@ -60,19 +60,18 @@
 <div class="d-flex align-items-center justify-content-center" id="landing">
     <div class="col text-center">
         <img src="images/logo.png" alt="Virdoc logo">
-        <h1 class="animate__animated animate__bounce text-center">Virtual Visits are HERE</h1>
-        <br><button class="btn btn-outline-primary">Talk to a doctor</button><br>
+        <h1 class="animate__animated animate__bounce text-center mb-4">Virtual Visits are HERE</h1>
+        <p><button class="btn btn-outline-primary">Talk to a doctor</button></p>
         <a href=#timeline>How it works &rarr;</a>
 
     </div>
 </div>
 
 <!--Solutions animation-->
-<div style="text-align: center; background-image:url('images/background-animation.png');
-background-size:cover; height:250px;">
+<div style="text-align: center; background-image:url('images/background-animation.png'); background-size:cover; height:250px;">
     <br><br><br><br>
     <h1>We provide</h1>
-    <h1 id="hi" class="animate__animated animate__fadeInDown animate__infinite"></h1>
+    <h1 id="hi" class="animate__animated animate__fadeInLeft"></h1>
 </div>
 
 <!--timeline-->
@@ -103,43 +102,28 @@ background-size:cover; height:250px;">
             </div>
         </li>
         <li>
-            <div class="timeline-box">
-                <time>1990s</time> <p>The Internet is Born</p>
-                <img style="width:200px" src="images/internet.jpg" alt="High speed internet">
+            <div>
+                <time>1990s</time> The Internet is Born
             </div>
         </li>
         <li>
             <div>
-                <time>2010-2016</time> More than 11,000 papers using keywords "telemedicine" and "telehealth" published
-            </div>
-        </li>
-        <li>
-            <div class="timeline-box">
-                <time>1993</time> <p>Founding of the American Telemedicine Association</p>
-                <img style="width:125px" src="images/ATA.png" alt="American telehealth association logo">
-            </div>
-        </li>
-        <li>
-            <div class="timeline-box">
-                <time>2020</time> <p>COVID-19 pandemic spurs rapid expansion of telehealth use to reduce physical
-                contact</p>
-                <img style="width:150px" src="images/covid.jpg" alt="COVID-19 protein">
+                <time>2010-16</time> More than 11,000 papers using keywords "telemedicine" and "telehealth" published
             </div>
         </li>
         <li>
             <div>
-                <time>March 2020</time> Telehealth capabilities expanded to Medicare beneficiaries, allowing for
-                office visits, mental health counseling, and preventative screenings via telehealth.
+                <time>1993</time> Founding of the American Telemedicine Association
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>2020</time> COVID-19 pandemic spurs rapid expansion of telehealth use to reduce physical contact
             </div>
         </li>
         <li>
             <div>
                 <time>2021</time> Virdoc is founded in an effort to provide affordable, inexpensive, accessible, and high quality care to all
-            </div>
-        </li>
-        <li>
-            <div>
-                <time>Today</time> Virdoc reaches <b>you</b>!
             </div>
         </li>
     </ol>
@@ -152,7 +136,7 @@ background-size:cover; height:250px;">
             <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow_next.svg" alt="next timeline arrow">
         </button>
     </div>
-
+    <p>https://intouchhealth.com/a-brief-history-of-telehealth/</p>
 </section>
 <script src="timeline.js"></script>
 
@@ -161,11 +145,11 @@ background-size:cover; height:250px;">
     <h1>Contact Us</h1><br>
     <form id="myform">
         <label for="fname">First name:</label>
-        <input type="text" id="fname" name="fname" style="width:35%">
+        <input type="text" id="fname" name="fname" style="width:35%"><br><br>
         <label for="lname">Last name:</label>
         <input type="text" id="lname" name="lname" style="width:35%"><br><br>
         <label for="email">Email:</label>
-        <input type="text" id="email" name="email" style="width:35%">
+        <input type="text" id="email" name="email" style="width:35%"><br><br>
 
         <label for="reason">Reason for Writing:</label>
         <select name="reason" id="reason">
@@ -195,8 +179,7 @@ background-size:cover; height:250px;">
 <!--solutions animation script-->
 <script>
     const mess = document.getElementById("hi");
-    let words = ["Wellness Checkups", "Mental Health Counseling", "Prescriptions", "Urgent Care",
-        "Preventative Screenings"];
+    let words = ["Wellness Checkups", "Mental Health Counseling", "Prescriptions", "Urgent Care"];
 
     myVar = setTimeout(setInterval('setWord();', 4000), 50);
     let i = 0;
