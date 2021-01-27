@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="whole_website.css">
+    <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="timeline.css">
+    <link rel="shortcut icon" href="favicon.ico"/>
 </head>
 
 <script type="text/javascript">
@@ -30,7 +31,6 @@
 <!--navbar-->
 <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #BBDEFB;" id="mainNav">
     <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#landing">Virdoc</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -103,28 +103,43 @@ background-size:cover; height:250px;">
             </div>
         </li>
         <li>
-            <div>
-                <time>1990s</time> The Internet is Born
+            <div class="timeline-box">
+                <time>1990s</time> <p>The Internet is Born</p>
+                <img style="width:200px" src="images/internet.jpg" alt="High speed internet">
             </div>
         </li>
         <li>
             <div>
-                <time>2010-16</time> More than 11,000 papers using keywords "telemedicine" and "telehealth" published
+                <time>2010-2016</time> More than 11,000 papers using keywords "telemedicine" and "telehealth" published
+            </div>
+        </li>
+        <li>
+            <div class="timeline-box">
+                <time>1993</time> <p>Founding of the American Telemedicine Association</p>
+                <img style="width:125px" src="images/ATA.png" alt="American telehealth association logo">
+            </div>
+        </li>
+        <li>
+            <div class="timeline-box">
+                <time>2020</time> <p>COVID-19 pandemic spurs rapid expansion of telehealth use to reduce physical
+                contact</p>
+                <img style="width:150px" src="images/covid.jpg" alt="COVID-19 protein">
             </div>
         </li>
         <li>
             <div>
-                <time>1993</time> Founding of the American Telemedicine Association
-            </div>
-        </li>
-        <li>
-            <div>
-                <time>2020</time> COVID-19 pandemic spurs rapid expansion of telehealth use to reduce physical contact
+                <time>March 2020</time> Telehealth capabilities expanded to Medicare beneficiaries, allowing for
+                office visits, mental health counseling, and preventative screenings via telehealth.
             </div>
         </li>
         <li>
             <div>
                 <time>2021</time> Virdoc is founded in an effort to provide affordable, inexpensive, accessible, and high quality care to all
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>Today</time> Virdoc reaches <b>you</b>!
             </div>
         </li>
     </ol>
@@ -137,7 +152,7 @@ background-size:cover; height:250px;">
             <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow_next.svg" alt="next timeline arrow">
         </button>
     </div>
-    <p>https://intouchhealth.com/a-brief-history-of-telehealth/</p>
+
 </section>
 <script src="timeline.js"></script>
 
@@ -180,7 +195,8 @@ background-size:cover; height:250px;">
 <!--solutions animation script-->
 <script>
     const mess = document.getElementById("hi");
-    let words = ["Wellness Checkups", "Mental Health Counseling", "Prescriptions", "Urgent Care"];
+    let words = ["Wellness Checkups", "Mental Health Counseling", "Prescriptions", "Urgent Care",
+        "Preventative Screenings"];
 
     myVar = setTimeout(setInterval('setWord();', 4000), 50);
     let i = 0;
