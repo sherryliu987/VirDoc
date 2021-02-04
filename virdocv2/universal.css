@@ -8,3 +8,8 @@ a {
 .navigational-color {
   color: #004aad;
 }
+
+.navigational-color:hover {
+    border-bottom: thin solid #ff1616;
+    border-collapse: collapse;
+}
