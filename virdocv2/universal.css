@@ -29,7 +29,10 @@ body {
 }   
 
 #landing {
-    height: 100vh;
+    height:100vh;
+    background-color: #BBDEFB;
+    background-image:url("./background.png");
+    background-size:cover;
 }
 
 #catchphrase {
