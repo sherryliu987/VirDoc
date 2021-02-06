@@ -2,7 +2,11 @@
 
 html, body, a, h1 {
     font-family: "Open Sans", sans-serif;
+}
+
+html, body {
     height: 100%;
+    background-color: #BBDEFB;
 }
 
 body {
