@@ -1,22 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
 
-html, body, a, h1 {
-    font-family: "Open Sans", sans-serif;
+html,
+body,
+a,
+h1 {
+  font-family: "Open Sans", sans-serif;
 }
 
-html, body {
-    height: 100%;
-    background-color: #BBDEFB;
+html,
+body {
+  height: 100%;
+  background-color: #bbdefb;
 }
 
 body {
-    background-image: url(./DEMO.png);
-    background-repeat: no-repeat;
+  background-image: url(./DEMO.png);
+  background-repeat: no-repeat;
 }
 
 .header-color {
-    color: #ff1616;
-    font-weight: 300;
+  color: #ff1616;
+  font-weight: 300;
 }
 
 .navigational-color {
@@ -24,17 +28,16 @@ body {
 }
 
 .navigational-color:hover {
-    border-bottom: thin solid #ff1616;
-    border-collapse: collapse;
-}   
+  border-bottom: thin solid #ff1616;
+  border-collapse: collapse;
+}
 
 #landing {
-    height:100vh;
-    background-color: #BBDEFB;
-    background-image:url("./background.png");
-    background-size:cover;
+  height: 100vh;
+  background-color: #bbdefb;
+  background-image: url("./background.png");
+  background-size: cover;
 }
 
 #catchphrase {
-
 }
