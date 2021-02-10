@@ -42,13 +42,6 @@ a{
     background-color:#FE8D8D;
 }
 
-/*landing*/
-#landing{
-    height:106vh;
-    background-color: #BBDEFB;
-    background-image:url("images/background.png");
-    background-size:cover;
-}
 img{
     width:30%;
     z-index:1;
