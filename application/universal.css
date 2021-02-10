@@ -3,7 +3,8 @@
 html,
 body,
 a,
-h1 {
+h1,
+div {
   font-family: "Open Sans", sans-serif;
 }
 
