@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./universal.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <title>virdoc</title>
 </head>
 
 <body class="d-flex h-100" style="background-color: #BBDEFB;">
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column" id="landing">
-        <header class="mb-auto">
+        <div class="mb-auto">
             <nav class="navbar navbar-expand-lg bg-transparent sticky-top">
                 <div class="container">
                     <div class="float-md-start">
-                        <a class="navbar-brand" href="./indexv2.html"><img src="./virdocNew.png" alt="virdoc" width="50%"></a>
+                        <a class="navbar-brand" href="./index.html"><img src="./virdocNew.png" alt="virdoc" width="50%"></a>
                     </div>
                     <div class="float-md-end">
                         <button class="navbar-toggler btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,11 +42,48 @@
             </nav>
         </header>
         <div class="text-center">
-            <h1>Incorporating telemedicine into your hospital is easy</h1>
-            <iframe src="https://marvelapp.com/prototype/fhch33h?emb=1&iosapp=false&frameless=false" width="453" height="864" allowTransparency="true" frameborder="0" style="-webkit-clip-path: inset(2px 2px); clip-path: inset(2px 2px);"></iframe>
+            <div class="p-5">
+                <h1 class="header-color animate__animated animate__fadeIn">Incorporating telemedicine into your hospital is easy.</h1>
+                <h1 class="header-color animate__animated animate__fadeIn">Find the solution that works best for you.</h1>
+            </div>
+            <!-- <iframe src="https://marvelapp.com/prototype/fhch33h?emb=1&iosapp=false&frameless=false" width="453" height="864" allowTransparency="true" frameborder="0" style="-webkit-clip-path: inset(2px 2px); clip-path: inset(2px 2px);"></iframe> -->
         </div>
-        <footer class="mt-auto">
-        </footer>
+        <div class="mt-auto">
+        </div>
+        <div class="container" id="solutions">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Remote E-Visits
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            COVID-19 Response
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                    </div>
+                </div>
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Accordion Item #3
+                        </button>
+                     </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
