@@ -3,7 +3,8 @@
 html,
 body,
 a,
-h1 {
+h1,
+div {
   font-family: "Open Sans", sans-serif;
 }
 
@@ -32,6 +33,12 @@ body {
   border-collapse: collapse;
 }
 
+#landing {
+  height: 100vh;
+  background-color: #bbdefb;
+  background-image: url("./background.png");
+  background-size: cover;
+}
 
 
 #catchphrase {
