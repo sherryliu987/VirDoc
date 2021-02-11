@@ -3,20 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>About</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="timeline.css">
-
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/timeline.css">
+    <style>
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+    </style>
 </head>
 <body>
 
 <nav class="navbar navbar-expand-lg bg-transparent sticky-top">
     <div class="container">
         <div class="float-md-start">
-            <a class="navbar-brand" href="index.html"><img src="logo.png" alt="virdoc" width="50%"></a>
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="virdoc" width="50%"></a>
         </div>
         <div class="float-md-end">
             <button class="navbar-toggler btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,7 +37,7 @@
                         <a class="nav-link navigational-color" href="solutions.html">Solutions</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link navigational-color" href="./about.html">About</a>
+                        <a class="nav-link navigational-color" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link navigational-color" href="sources.html">Sources</a>
@@ -38,11 +45,18 @@
                     <li class="nav-item">
                         <a class="nav-link navigational-color" href="contact.html">Contact</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link navigational-color" href="demo.html">Demo</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </div>
 </nav>
+
+    <img class="center" src="images/telehealth.jpg" alt="telehealth appointment">
+<br>
+
 
 <div style="padding-left:10%;padding-right:10%;">
 
@@ -141,7 +155,7 @@
     </div>
 
 </section>
-<script src="timeline.js"></script>
+<script src="scripts/timeline.js"></script>
 
 
 <!--solutions animation script-->
@@ -157,11 +171,6 @@
         if(i === words.length) i = 0;
     }
 </script>
-<div style="text-align: center">
-    <h1>Demo your experience here!</h1>
-    <iframe src="https://marvelapp.com/prototype/fhch33h?emb=1&iosapp=false&frameless=false" width="400" height="600"
-            allowTransparency="true" frameborder="0" style="-webkit-clip-path: inset(2px 2px); clip-path: inset(2px 2px);"></iframe>
-</div>
 
 </body>
 </html>
