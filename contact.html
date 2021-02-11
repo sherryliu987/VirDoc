@@ -50,46 +50,50 @@
         </header>
         <div class="text-center">
             <div class="p-5">
-                <h1 class="header-color animate__animated animate__fadeIn">Incorporating telemedicine into your hospital is easy.</h1>
-                <h1 class="header-color animate__animated animate__fadeIn">Find out how VirDoc can help you.</h1>
+                <h1 class="header-color animate__animated animate__fadeIn">Contact Us</h1>
             </div>
         </div>
         <div class="mt-auto">
         </div>
         <div class="container" id="solutions">
             <div id="form_title">
-                <h1>Contact Us</h1><br>
                 <form id="myform">
-                    <label for="fname">First name:</label>
-                    <input type="text" id="fname" name="fname" style="width:35%"><br><br>
-                    <label for="lname">Last name:</label>
-                    <input type="text" id="lname" name="lname" style="width:35%"><br><br>
-                    <label for="email">Email:</label>
-                    <input type="text" id="email" name="email" style="width:35%"><br><br>
-            
-                    <label for="reason">Reason for Writing:</label>
-                    <select name="reason" id="reason">
-                        <option value="pricing">Pricing</option>
-                        <option value="question">Question</option>
-                        <option value="issue">Issue</option>
-                        <option value="other">Other</option>
-                    </select><br><br>
-            
-                    <label for="message">Message:</label><br>
-                    <textarea type="text" id="message" name="message" rows="5" cols="500"></textarea><br>
-                    <br>
-                    <button id="submit_b" class="btn btn-outline-primary" type="reset">Submit</button>
-                    <br>
+                    <div class="mb-3">
+                        <label for="fname" class="form-label">First name:</label>
+                        <input type="text" id="fname" name="fname" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="lname" class="form-label">Last name:</label>
+                        <input type="text" id="lname" name="lname" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="text" id="email" name="email" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="reason" class="form-label">Reason for Writing:</label>
+                        <select name="reason" id="reason" class="form-select">
+                            <option value="pricing">Pricing</option>
+                            <option value="question">Question</option>
+                            <option value="issue">Issue</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message:</label><br>
+                        <textarea type="text" id="message" name="message" rows="5" class="form-control"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <button id="submit_b" class="btn btn-outline-primary" type="reset">Submit</button>
+                    </div>
                 </form>
             
                 <div id="submit_message" style="display:none;">
                     <p>Thank you for submitting your message. We will be in contact with you shortly.</p>
-                    <br>
                     <form id="myform2">
                         <button class=" btn btn-outline-primary" type="submit">Submit another message</button>
                     </form>
                 </div>
-                <br>
             </div>
         </div>
     </div>
