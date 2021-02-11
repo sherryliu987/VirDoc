@@ -19,10 +19,6 @@ html {
     padding: 30px;
 }
 
-a{
-    color: red;
-}
-
 /*solutions animation timing*/
 .animate__animated.animate__fadeInDown {
     --animate-duration: 4s;

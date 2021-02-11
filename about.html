@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>About</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="timeline.css">
+
 </head>
 <body>
 
 <nav class="navbar navbar-expand-lg bg-transparent sticky-top">
     <div class="container">
         <div class="float-md-start">
-            <a class="navbar-brand" href="./index.html"><img src="logo.png" alt="virdoc" width="50%"></a>
+            <a class="navbar-brand" href="index.html"><img src="logo.png" alt="virdoc" width="50%"></a>
         </div>
         <div class="float-md-end">
             <button class="navbar-toggler btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,16 +27,16 @@
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link navigational-color" href="./solutions.html">Solutions</a>
+                        <a class="nav-link navigational-color" href="solutions.html">Solutions</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link navigational-color" href="./about.html">About</a>
                     </li>
-                    <li class="nav-item navigational-color">
-                        <a class="nav-link navigational-color4" href="./sources.html">Sources</a>
+                    <li class="nav-item">
+                        <a class="nav-link navigational-color" href="sources.html">Sources</a>
                     </li>
-                    <li class="nav-item navigational-color">
-                        <a class="nav-link navigational-color4" href="./contact.html">Contact</a>
+                    <li class="nav-item">
+                        <a class="nav-link navigational-color" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -42,9 +44,28 @@
     </div>
 </nav>
 
+<div style="padding-left:10%;padding-right:10%;">
+
+    <h2 style="text-align: center; color:red">
+        Where Medicine Meets Technology
+    </h2>
+    <p style="color:black">Virdoc is your virtual doctor. We provide telemedicine solutions, which means caring for
+        patients remotely
+        using
+        HIPAA compliant video-conferencing tools. Our technology is user friendly, convenient, and cost-effective.</p>
+
+    <h2 style="text-align: center; color:red">Anywhere, Anytime.</h2>
+    <p style="color:black">Get 24/7 on demand care from the comfort of your home. Leave location, cost, and time barriers behind and get
+        connected with your team of healthcare professionals.</p>
+
+    <h2 style="text-align: center; color:red">Stay Connected</h2>
+    <p style="color:black">Help is just one click away. Easily track your upcoming appointments, health updates, care plan, medications, and more through our online portal.</p>
+
+</div>
+
+
 <!--Solutions animation-->
 <div style="text-align: center; background-size:cover; height:250px;">
-    <br><br><br><br>
     <h1>We provide</h1>
     <h1 id="solutions" class="animate__animated animate__fadeInDown"></h1>
 </div>
@@ -52,7 +73,7 @@
 <!--timeline-->
 <section class="section intro">
     <div class="container">
-        <h1>Our History</h1>
+        <h1><u>Our History</u></h1>
     </div>
 </section>
 
@@ -77,8 +98,10 @@
             </div>
         </li>
         <li>
-            <div>
-                <time>1990s</time> The Internet is Born
+            <div class="timeline-box">
+                <time>1990s</time>
+                <p>The Internet is Born</p>
+                <img src="images/internet.jpg" alt="First internet">
             </div>
         </li>
         <li>
@@ -87,18 +110,23 @@
             </div>
         </li>
         <li>
-            <div>
-                <time>1993</time> Founding of the American Telemedicine Association
+            <div class="timeline-box">
+                <time>1993</time><p>Founding of the American Telemedicine Association</p>
+                <img src="images/ATA.png" alt="American Telemedicine Association Logo">
             </div>
         </li>
         <li>
-            <div>
-                <time>2020</time> COVID-19 pandemic spurs rapid expansion of telehealth use to reduce physical contact
+            <div class="timeline-box">
+                <time>2020</time> <p>COVID-19 pandemic spurs rapid expansion of telehealth use to reduce physical
+                contact</p>
+                <img src="images/covid.jpg" alt="COVID logo">
             </div>
         </li>
         <li>
-            <div>
-                <time>2021</time> Virdoc is founded in an effort to provide affordable, inexpensive, accessible, and high quality care to all
+            <div class="timeline-box">
+                <time>2021</time> <p>Virdoc is founded in an effort to provide affordable, inexpensive, accessible, and
+                high quality care to all</p>
+                <img style="width:200px" src="images/logo.png" alt="Virdoc Logo">
             </div>
         </li>
     </ol>
@@ -129,6 +157,11 @@
         if(i === words.length) i = 0;
     }
 </script>
-<iframe src="https://marvelapp.com/prototype/fhch33h?emb=1&iosapp=false&frameless=false" width="453" height="864" allowTransparency="true" frameborder="0" style="-webkit-clip-path: inset(2px 2px); clip-path: inset(2px 2px);"></iframe>
+<div style="text-align: center">
+    <h1>Demo your experience here!</h1>
+    <iframe src="https://marvelapp.com/prototype/fhch33h?emb=1&iosapp=false&frameless=false" width="400" height="600"
+            allowTransparency="true" frameborder="0" style="-webkit-clip-path: inset(2px 2px); clip-path: inset(2px 2px);"></iframe>
+</div>
+
 </body>
 </html>
