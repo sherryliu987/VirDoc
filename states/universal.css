@@ -1,0 +1,10 @@
+.navigational-color {
+  color: #004aad;
+  border-bottom: rgb(1, 1, 1, 0);
+  border-collapse: collapse;
+}
+
+.navigational-color:hover {
+  border-bottom: thin solid #ff1616;
+  border-collapse: collapse;
+}
