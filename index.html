@@ -5,17 +5,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/universal.css">
+    <link rel="stylesheet" href="./universal.css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <title>Virdoc</title>
     <script type="text/javascript" src="https://static.botsrv.wcom/website/js/widget2.90b5a0ff.js" integrity="sha384-NVM8PybJp1yFZ4kLUQaM1vkqGoIL2QBFpYZb2O5sy5Vtnf7OYkjgFA6YDwmuwbLl" crossorigin="anonymous" defer></script>
-
     <style>
         #landing {
             height: 100vh;
-            background-color: #bbdefb;
-            background-image: url("images/landing_background.png");
+            background-image: url("states/bg2.png");
             background-size: cover;
+            backdrop-filter: blur(5px);
         }
     </style>
     <script type="text/javascript">
@@ -27,16 +27,14 @@
     <script type="text/javascript" src="https://static.botsrv.com/website/js/widget2.5f7299ac.js" integrity="sha384-p5TzbQcX7Erls/p0VYB3MZ9IMBguuYZTtt2uO9QWQivmZT8m+yt0cJItkQkP5boD" crossorigin="anonymous" defer></script>
 </head>
 
-
-
 <body class="d-flex h-100" style="background-color: #BBDEFB;">
 
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column" id="landing">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column" id="landing" >
         <header class="mb-auto">
-            <nav class="navbar navbar-expand-lg bg-transparent sticky-top">
+            <nav class="navbar navbar-expand-lg bg-transparent sticky-top position" id="nav">
                 <div class="container">
                     <div class="float-md-start">
-<!--                        <a class="navbar-brand" href="./indexv2.html"><img src="./logo.png" alt="virdoc" width="50%"></a>-->
+                       <a class="navbar-brand" href="./index.html"><img src="states/logo.png" alt="virdoc" width="50%" id="logo"></a>
                     </div>
                     <div class="float-md-end">
                         <button class="navbar-toggler btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,18 +66,21 @@
             </nav>
         </header>
         <div class="text-center">
-            <div class="position-absolute top-50 start-50 translate-middle" style="margin-top: -6vh;">
-                <img src="images/logo.png" alt="virdoc" width="50%">
-                <h1 class="header-color">Virtual Medicine is</h1><br><h1 class="header-color pb-1" style="margin-top:
-                -3vh;"><b>HERE</b></h1>
-
-                <a class="btn btn-outline-primary" href="solutions.html">How it works</a>
+            <div class="position-absolute top-50 start-50 translate-middle text-center" id="sloganbg" style="width: 100vw; height: 250px; padding-left: 10px; padding-right: 10px;">
             </div>
+            <div class="position-absolute top-50 start-50 translate-middle text-center">
+                <img src="./homepage.svg" width="500px" id="slogan">
+                <p><a class="btn">learn more</a></p>
+            </div>
+            
         </div>
         <footer class="mt-auto">
         </footer>
     </div>
-
+    <script type="text/javascript">
+        const sloganH = document.getElementById("slogan").style.height;
+        document.getElementById('sloganbg').setAttribute('height', sloganH);
+    </script>
 </body>
 
 
